@@ -1,0 +1,685 @@
+@font-face {
+    font-family: MontserratBlack;
+    src: url("../fonts/Montserrat/Montserrat-Black.ttf");
+}
+
+@font-face {
+    font-family: MontserratExtraBold;
+    src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: RobotoBlack;
+    src: url("../fonts/Roboto/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url("../fonts/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fcfcfc;
+}
+
+a:active,
+a:hover,
+a:visited,
+a:focus,
+a:link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fcfcfc;
+
+    overflow-x: hidden;
+    -webkit-overflow-x: hidden;
+}
+
+#banner {
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    height: 750px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    width: 1370px;
+    height: 120px;
+    background-image: url(../img/header.svg);
+
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+header>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1140px;
+    height: 35px;
+    margin-top: 23px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+
+    width: 750px;
+
+    font-family: RobotoMedium;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #8795A2;
+}
+
+.menu_item {
+    cursor: pointer;
+    transition-duration: 0.5s;
+
+    color: #8795A2 !important;
+}
+
+.menu_item:hover {
+    color: #21E18C !important;
+}
+
+.tel_header_button {
+    width: 145px;
+    height: 35px;
+
+    border: 2px solid #21E18C;
+    border-radius: 3px;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    color: #21E18C;
+    transition-duration: 0.5s;
+}
+
+.tel_header_button:hover {
+    background-color: #21e18b27;
+}
+
+
+.tel_header_button>div {
+    font-family: RobotoMedium;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#banner_content_container {
+    width: 1140px;
+    min-height: 545px;
+
+    margin-top: 25px;
+
+    background: rgba(0, 20, 40, 0.95);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+
+    padding: 45px 95px 45px 95px;
+
+    display: flex;
+    justify-content: space-between;
+
+    z-index: 1;
+}
+
+#banner_text_content {
+    width: 475px;
+    min-height: 430px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#banner_head {
+    font-family: MontserratExtraBold;
+    font-size: 48px;
+    line-height: 59px;
+
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+#banner_text {
+    font-family: RobotoRegular;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+#banner_content_desktop_img_mobile {
+    display: none;
+}
+
+#banner_text>p {
+    margin-top: 10px;
+}
+
+#bunner_more_button {
+    width: 125px;
+    height: 35px;
+
+    font-family: RobotoMedium;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    background-color: #21E18C;
+    border-radius: 3px;
+
+    color: rgba(0, 20, 40, 0.8);
+
+    margin-top: 30px;
+
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#bunner_more_button:hover {
+    background-color: #21e18bbe;
+}
+
+#banner_text>p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#fond_image {
+    z-index: 3;
+    position: absolute;
+    top: 615px;
+}
+
+/*main*/
+
+main {
+    width: 100%;
+    min-height: 400px;
+    background-color: #fcfcfc;
+    padding-bottom: 150px;
+}
+
+.in_main_block {
+    width: 1140px;
+
+    padding-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main_head {
+    /*font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;*/
+    font-family: MontserratBlack;
+    font-size: 38px;
+    line-height: 46px;
+
+    margin-bottom: 30px;
+
+    color: #083360;
+
+    width: 100%;
+    text-align: center;
+}
+
+#hello_video {
+    width: 1000px;
+    height: 500px;
+}
+
+#greeting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about_content_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about_text {
+    font-family: RobotoRegular;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: rgba(44, 48, 54, 0.6);
+}
+
+#about_content_container>img {
+    width: 385px;
+    margin-left: 60px;
+}
+
+#project_in_numbers {
+    margin-top: 150px;
+
+    width: 100%;
+    min-height: 400px;
+
+    background: linear-gradient(0deg, rgba(0, 20, 40, 0.75), rgba(0, 20, 40, 0.75)), url(../img/project_in_numbers_bg.JPG);
+
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 100px 40px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project_in_numbers>div {
+    width: 1140px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+}
+
+.category_number_value {
+    font-family: RobotoBlack;
+    font-size: 128px;
+    line-height: 150px;
+    text-align: center;
+}
+
+.category_name_value {
+    font-family: RobotoRegular;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+
+#control_dots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#directions_cards_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#directions_cards_container>a>img {
+    width: 340px;
+}
+
+#project_geography {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project_geography>p {
+    font-family: RobotoRegular;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: rgba(44, 48, 54, 0.7);
+}
+
+#news_cards_container {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.news_card {
+    min-width: 530px;
+    min-height: 150px;
+
+    width: 530px;
+
+    background-color: white;
+
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+
+    padding: 20px 25px 20px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 15px;
+}
+
+.news_head {
+    font-family: RobotoMedium;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #2C3036;
+}
+
+.news_card_under_head_container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    color: rgba(44, 48, 54, 0.6) !important;
+}
+
+.more {
+    font-family: RobotoMedium;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(44, 48, 54, 0.6);
+}
+
+.more:hover {
+    color: #083360;
+}
+
+
+.news_card_date {
+    font-family: RobotoRegular;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#teachers_cards_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.teacher_card {
+    width: 290px;
+    text-align: center;
+
+    margin-left: 35px;
+    margin-right: 35px;
+
+    margin-bottom: 60px;
+}
+
+.teacher_card>img {
+    width: 275px;
+}
+
+.teacher_name {
+    font-family: MontserratBlack;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 29px;
+
+    color: #083360;
+
+    margin-top: 15px;
+}
+
+.teacher_direction {
+    font-family: RobotoRegular;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    margin-top: 5px;
+
+    color: rgba(44, 48, 54, 0.6);
+}
+
+#tsu_logo {
+    height: 150px;
+}
+
+#departament {
+    height: 150px;
+}
+
+#design_logo {
+    height: 150px;
+}
+
+#gazprom_logo {
+    height: 150px;
+}
+
+#partners_cards_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#regions_cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-top: 50px;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    min-height: 500px;
+
+    background: linear-gradient(96.64deg, #012243 18.66%, #083360 81.29%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: white;
+
+    padding-top: 150px;
+    padding-bottom: 25px;
+}
+
+#footer_content_container {
+    width: 1140px;
+    min-height: 300px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contacts_head {
+    font-family: RobotoBold;
+    font-size: 30px;
+    line-height: 35px;
+    font-variant: small-caps;
+
+    margin-bottom: 50px;
+}
+
+#contacts>div {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact_text {
+    font-family: RobotoRegular;
+    font-size: 20px;
+    line-height: 23px;
+
+    margin-bottom: 25px;
+    color: white !important;
+}
+
+.contact_group>a {
+    color: white !important;
+    transition-duration: 0.5s;
+
+    font-family: RobotoBold;
+    ;
+}
+
+.contact_group>a:hover {
+    color: #21E18C !important;
+}
+
+.contact_position {
+    margin-bottom: 5px;
+}
+
+.contact_text>a {
+    color: white !important;
+    transition-duration: 0.5s;
+
+}
+
+.contact_text>a:hover {
+    color: #21E18C !important;
+}
+
+.contact_img {
+    margin-top: 5px;
+    margin-right: 15px;
+
+    width: 20px;
+}
+
+.contact_position {
+    font-family: RobotoRegular;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#contact_links {
+    width: 170px;
+    margin-left: 125px;
+    margin-right: 35px;
+}
+
+#contact_links>a>img {
+    margin-bottom: 20px;
+}
+
+#social_netwrks_container {
+    display: flex;
+    justify-content: center;
+}
+
+#social_netwrks_container>a>img {
+    margin-left: 10px;
+    margin-right: 10px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#all_rights_reserved {
+    font-family: RobotoRegular;
+    font-size: 12px;
+    line-height: 14px;
+
+    margin-top: 80px;
+}
+
+#experts_list_container {
+    font-family: RobotoRegular;
+    font-size: 18px;
+
+    color: #083360;
+}
+
+#experts_list_container>li {
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+#experts_list_container>li>span {
+    color: rgba(44, 48, 54, 0.6);
+}
+
+/*for_mobile_styles*/
+
+#mobile_header {
+    display: none;
+}
+
+
+#company_info_container {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#company_info {
+    font-family: RobotoLight;
+    font-size: 12px;
+}
+
+#company_info>p {
+    margin: 0;
+}
+
+#gazprom_footer_logo {
+    width: 380px;
+    margin-top: 40px;
+}

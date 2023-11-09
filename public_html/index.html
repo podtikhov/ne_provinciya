@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="true" name="HandheldFriendly">
+    <meta content="width" name="MobileOptimized">
+
+    <title>Сибирская НЕ_ПРОВИНЦИЯ</title>
+    <link rel="icon" href="./img/favicon.svg">
+
+    <link href="./styles/main.css?7" rel="stylesheet" type="text/css">
+    <link href="./styles/mobile.css?7" rel="stylesheet" type="text/css">
+    <link href="./styles/slider.css" rel="stylesheet" type="text/css">
+    <link href="./libs/bootstrap_v5_2_0/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top" id="mobile_header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">СИБИРСКАЯ НЕ_ПРОВИНЦИЯ</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" id="mobile_menu_bunner">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <div class="nav-link" href="#" onclick="scroll_to(about)">О проекте</div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="nav-link" href="#" onclick="scroll_to(control_dots)">Этапы</div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="nav-link" href="#" onclick="scroll_to(directions)">Направления</div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="nav-link" href="#" onclick="scroll_to(project_geography)">География проекта
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="nav-link" href="#" onclick="scroll_to(news)">Новости</div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="nav-link" href="#" onclick="scroll_to(partners)">Партнёры</div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                href="https://docs.google.com/document/d/1rldFt79Pyb3gFS7sYJi-PZKajFmAY20iZ0ic1m090fg/edit?usp=drivesdk">
+                                <div class="nav-link">Галерея</div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="tel:89138150200">
+                        <div class="tel_header_button">
+                            <img src="./img/phone_icon.svg">
+                            <div>8 913 815 02 00</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main_banner_container">
+        <div class="slider">
+            <div class="item" id="slide_1"></div>
+            <div class="item" id="slide_2"></div>
+            <div class="item" id="slide_3"></div>
+            <div class="item" id="slide_4"></div>
+            <div class="item" id="slide_5"></div>
+        </div>
+
+        <div id="banner">
+            <header>
+                <div>
+                    <div id="menu">
+                        <div class="menu_item" onclick="scroll_to(about)">О проекте</div>
+                        <div class="menu_item" onclick="scroll_to(control_dots)">Этапы</div>
+                        <div class="menu_item" onclick="scroll_to(directions)">Направления</div>
+                        <div class="menu_item" onclick="scroll_to(project_geography)">География проекта</div>
+                        <div class="menu_item" onclick="scroll_to(news)">Новости</div>
+                        <div class="menu_item" onclick="scroll_to(partners)">Партнёры</div>
+                        <a
+                            href="https://docs.google.com/document/d/1rldFt79Pyb3gFS7sYJi-PZKajFmAY20iZ0ic1m090fg/edit?usp=drivesdk">
+                            <div class="menu_item">Галерея</div>
+                        </a>
+                    </div>
+
+                    <a href="tel:89138150200">
+                        <div class="tel_header_button">
+                            <img src="./img/phone_icon.svg">
+                            <div>8 913 815 02 00</div>
+                        </div>
+                    </a>
+                </div>
+            </header>
+
+
+            <div id="banner_content_container">
+                <img src="./img/banner/banner_img_elements_mobile.png" id="banner_content_desktop_img_mobile">
+
+                <div id="banner_text_content">
+                    <div id="banner_head">СИБИРСКАЯ НЕ_ПРОВИНЦИЯ</div>
+
+                    <div id="banner_text">
+                        Наш проект - это попытка помочь подросткам и молодым жителям Томской области сделать свой вклад
+                        не
+                        только в
+                        развитие
+                        своего профессионального будущего, получив современные конкурентные навыки и знания в области
+                        креативных индустрий,
+                        в
+                        том числе в сфере IT, индустрии туризма и гостеприимства, но и использовать свой потенциал на
+                        благо
+                        своего родного
+                        края,
+                        сделать среду вокруг себя насыщеннее, позитивнее и интереснее.
+
+                        <p>Проект Томского отделения Русского географического общества (РГО)</p>
+                    </div>
+
+                    <div id="bunner_more_button" onclick="scroll_to(about)">Подробнее</div>
+                </div>
+
+                <img src="./img/banner/banner_img_elements.png" width="395px" height="428px"
+                    id="banner_content_desktop_img">
+            </div>
+
+            <img src="./img/banner/fond_logo_group_banner.svg" id="fond_image"
+                alt="При поддержке фонда культурных иницатив">
+        </div>
+    </div>
+
+
+    <main>
+        <div id="greeting" class="in_main_block">
+            <div class="main_head">ПРИВЕТСТВИЕ РУКОВОДИТЕЛЯ ПРОЕКТА</div>
+
+            <iframe id="hello_video" src="https://www.youtube-nocookie.com/embed/svMpaaNxl7Q"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="news" class="in_main_block">
+            <div class="main_head">НОВОСТИ</div>
+
+            <div id="news_cards_container">
+                <div class="news_card">
+                    <div class="news_head">Заголовок новости 1</div>
+
+                    <div class="news_card_under_head_container">
+                        <a href="https://rgotomsk.com/podvedeny-ofitsialnyye-itogi-proyekta-sibirskaya-ne_provintsiya/"
+                            class="more" target="_blank"><strong>Подробнее</strong></a>
+
+                        <div class="news_card_date">01.01.2022</div>
+                    </div>
+                </div>
+
+                <div class="news_card">
+                    <div class="news_head">Заголовок новости 1</div>
+
+                    <div class="news_card_under_head_container">
+                        <a href="https://rgotomsk.com/podvedeny-ofitsialnyye-itogi-proyekta-sibirskaya-ne_provintsiya/"
+                            class="more" target="_blank"><strong>Подробнее</strong></a>
+
+                        <div class="news_card_date">01.01.2022</div>
+                    </div>
+                </div>
+
+                <div class="news_card">
+                    <div class="news_head">Заголовок новости 1</div>
+
+                    <div class="news_card_under_head_container">
+                        <a href="https://rgotomsk.com/podvedeny-ofitsialnyye-itogi-proyekta-sibirskaya-ne_provintsiya/"
+                            class="more" target="_blank"><strong>Подробнее</strong></a>
+
+                        <div class="news_card_date">01.01.2022</div>
+                    </div>
+                </div>
+
+                <div class="news_card">
+                    <div class="news_head">Заголовок новости 1</div>
+
+                    <div class="news_card_under_head_container">
+                        <a href="https://rgotomsk.com/podvedeny-ofitsialnyye-itogi-proyekta-sibirskaya-ne_provintsiya/"
+                            class="more" target="_blank"><strong>Подробнее</strong></a>
+
+                        <div class="news_card_date">01.01.2022</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="in_main_block">
+            <div class="main_head">О ПРОЕКТЕ</div>
+
+            <div id="about_content_container">
+                <div id="about_text">
+                    <p>
+                        Практически половина населения Томской области проживает в сельской местности - небольших
+                        посёлках и деревнях, которые
+                        чаще всего характеризуются низкой концентрацией творческих и культурных инициатив, отсутствием
+                        туристически
+                        привлекательных объектов и событий, а также достаточно низким уровнем качества жизни населения.
+                    </p>
+
+                    <p>
+                        «Сибирская Не_провинция» - это комплексная программа обучения, профориентации и получения
+                        практического опыта в области
+                        креативных индустрий, в том числе туристской деятельности для учащихся сельских школ Томской
+                        области.
+                    </p>
+
+                    <p>
+                        Участники проекта при поддержке профильных специалистов смогут создать и реализовать в жизнь
+                        свой
+                        творческий проект. Мы
+                        считаем, что через создание и развитие креативных проектов школьники смогут по-настоящему
+                        прочувствовать ценность своей
+                        малой родины, её многогранность, потенциал для развития, в том числе для собственного развития
+                        на данной территории.
+                        Кроме того, проведение творческих мероприятий и реализация творческих продуктов позволит
+                        повысить и качество жизни
+                        внутри территории, создать и поддержать правильные постулаты любви и уважения к своему Дому.
+                    </p>
+
+                    <p><strong>Проект реализуется с июня <nobr>2022 г.</nobr> по май <nobr>2023 г.</nobr></strong></p>
+                </div>
+
+                <img src="./img/about_image.png" id="about_img">
+            </div>
+        </div>
+
+        <div id="project_in_numbers">
+            <div>
+                <div>
+                    <div class="category_number_value">5</div>
+                    <div class="category_name_value">Районов</div>
+                </div>
+
+                <div>
+                    <div class="category_number_value">8</div>
+                    <div class="category_name_value">Наставников</div>
+                </div>
+
+                <div>
+                    <div class="category_number_value">5</div>
+                    <div class="category_name_value">Направлений</div>
+                </div>
+
+                <div>
+                    <div class="category_number_value">8</div>
+                    <div class="category_name_value">Партнёров</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="control_dots" class="in_main_block">
+            <div class="main_head">ЭТАПЫ</div>
+            <img src="./img/roadmap_5.svg" id="roadmap_img">
+        </div>
+
+        <div id="directions" class="in_main_block">
+            <div class="main_head">НАПРАВЛЕНИЯ</div>
+
+            <div id="directions_cards_container">
+                <a href="https://www.youtube.com/watch?v=q_qgqiJTwnc">
+                    <img src="./img/directions_cards/web_design_direction_card.png" alt="Веб-дизайн">
+                </a>
+
+                <a style="cursor: auto;">
+                    <img src="./img/directions_cards/event_management_direction_card.png" alt="Event-менеджмент">
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=WC53sNVzFCU">
+                    <img src="./img/directions_cards/graphic_design_direction_card.png" alt="Графический дизайн">
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=nycTbLE-PBE">
+                    <img src="./img/directions_cards/turism_direction_card.png" alt="Туризм">
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=-v2eUhaAylw">
+                    <img src="./img/directions_cards/brand_mangement_direction_card.png" alt="Продюсирование">
+                </a>
+            </div>
+        </div>
+
+        <div id="project_geography" class="in_main_block">
+            <div class="main_head">ГЕОГРАФИЯ ПРОЕКТА</div>
+
+            <p>Проект реализуется в следующих районах Томской области:
+                <strong>город Томск</strong>,
+                <strong>Асиновский</strong>,
+                <strong>Бачкарский</strong>,
+                <strong>Зырянский</strong>,
+                <strong>Первомайский</strong>,
+                <strong>Тегульдетский</strong>
+            </p>
+
+            <img src="./img/map.svg" id="map_img">
+        </div>
+
+        <div id="programm_director" class="in_main_block">
+            <div class="main_head"></div>
+
+            <div class="teacher_card" style="margin-left: auto; margin-right: auto;">
+                <img src="./img/teacher_photos/pikalova-min.png">
+                <div class="teacher_name">Лилия Пикалова</div>
+                <div class="teacher_direction">Программный директор</div>
+            </div>
+        </div>
+
+        <div id="teachers" class="in_main_block">
+            <div class="main_head">НАСТАВНИКИ</div>
+
+            <div id="teachers_cards_container">
+                <div class="teacher_card">
+                    <img src="./img/teacher_photos/shmakova-min.png">
+                    <div class="teacher_name">Александра Шмакова</div>
+                    <div class="teacher_direction">Event-менеджмент</div>
+                </div>
+
+                <div class="teacher_card">
+                    <img src="./img/teacher_photos/gavrilova-min.png">
+                    <div class="teacher_name">Екатерина Гаврилова</div>
+                    <div class="teacher_direction">Графический дизайн</div>
+                </div>
+
+                <div class="teacher_card">
+                    <img src="./img/teacher_photos/sharov-min.png">
+                    <div class="teacher_name">Илья Шаров</div>
+                    <div class="teacher_direction">WEB-дизайн</div>
+                </div>
+
+                <div class="teacher_card">
+                    <img src="./img/teacher_photos/lipatov-min.png">
+                    <div class="teacher_name">Виталий Липатов</div>
+                    <div class="teacher_direction">VR-технологии</div>
+                </div>
+
+                <div class="teacher_card">
+                    <img src="./img/teacher_photos/polyakova-min.png">
+                    <div class="teacher_name">Анна Полякова</div>
+                    <div class="teacher_direction">Project-менеджмент</div>
+                </div>
+
+                <div class="teacher_card">
+                    <img src="./img/teacher_photos/kovalevsky-min.png">
+                    <div class="teacher_name">Евгений Ковалевский</div>
+                    <div class="teacher_direction">Экстремальный туризм</div>
+                </div>
+
+                <div class="teacher_card">
+                    <img src="./img/teacher_photos/burceva-min.png">
+                    <div class="teacher_name">Милана Бурцева</div>
+                    <div class="teacher_direction">Туризм</div>
+                </div>
+
+                <div class="teacher_card">
+                    <img src="./img/teacher_photos/egorenkov-min.png">
+                    <div class="teacher_name">Вячеслав Егоренков</div>
+                    <div class="teacher_direction">WEB-дизайн</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="experts" class="in_main_block">
+            <div class="main_head">ЭКСПЕРТЫ</div>
+
+            <ul id="experts_list_container">
+                <li>
+                    <strong>Жуков Евгений</strong>
+
+                    <span>
+                        - основатель томского продюсерского объединения CAST Production, один из создателей томского
+                        сериала «Соцсети», продюсер, режиссер, организатор кинофестивалей, автор социальных проектов,
+                        член ТО РГО
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Кондаков Пётр</strong>
+
+                    <span>
+                        - заслуженный работник культуры, сотрудник томского филиала ВГТРК, член Совета ТО РГО,
+                        руководитель информационного направления
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Ромашова Татьяна</strong>
+
+                    <span>
+                        - канд. геогр. наук, доцент ТГУ, член Совета ТО РГО, руководитель географического направления,
+                        автор учебно-методических пособий по географии Томской области
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Антошкина Ольга</strong>
+
+                    <span>
+                        - директор Федерального государственного бюджетного учреждения «Государственный природный
+                        заповедник «Васюганский», член Совета ТО РГО
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Татьянин Геннадий</strong>
+
+                    <span>
+                        - канд. геол.-минерал. наук, доцент ТГУ, член Совета ТО РГО
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Гуренкова Елена</strong>
+
+                    <span>
+                        - учитель информатики высшей квалификационной категории, лауреат премии Томской области в сфере
+                        образования, науки, здравоохранения и культуры
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Иващенко Константин</strong>
+
+                    <span> - видеограф, член ТО РГО</span>
+                </li>
+
+                <li>
+                    <strong>Мальцева Мария</strong>
+
+                    <span>
+                        - член Совета ТО РГО, руководитель проектного направления, автор региональных социальных
+                        проектов
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Барашкова Диана</strong>
+
+                    <span>
+                        - руководитель Молодёжного клуба ТО РГО «Компас», фотограф, видеограф
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Зинченко Нина</strong>
+
+                    <span> - методист ИМЦ по географии, член ТО РГО</span>
+                </li>
+
+                <li>
+                    <strong>Пикалова Лилия</strong>
+
+                    <span> - директор IT-академии ООО "Спутник"</span>
+                </li>
+
+                <li>
+                    <strong>Трушина Анастасия</strong>
+
+                    <span> - помощник исполнительного директора Томского отделения РГО, эколог</span>
+                </li>
+
+                <li>
+                    <strong>Косихина Анна</strong>
+
+                    <span> - специалист по информационному продвижению</span>
+                </li>
+
+                <li>
+                    <strong>Хромых Вадим</strong>
+
+                    <span> - заведующий кафедрой географии ТГУ</span>
+                </li>
+
+                <li>
+                    <strong>Лисовская Наталья</strong>
+
+                    <span> - историк, архитектор, экскурсовод</span>
+                </li>
+
+                <li>
+                    <strong>Боровиков Дмитрий</strong>
+
+                    <span> - мотопутешественник</span>
+                </li>
+
+                <li>
+                    <strong>Филандышева Лариса</strong>
+
+                    <span> - доцент кафедры краеведения и туризма ТГУ</span>
+                </li>
+
+                <li>
+                    <strong>Волков Ярослав</strong>
+
+                    <span> - член ТО РГО, видеограф, технический специалист</span>
+                </li>
+
+                <li>
+                    <strong>Белозёров Олег </strong>
+
+                    <span>
+                        - заместитель начальника Департамента образования г. Томска
+                    </span>
+                </li>
+
+                <li>
+                    <strong>Яковенко Валентина</strong>
+                    <span> - эксперт-географ</span>
+                </li>
+            </ul>
+        </div>
+
+        <div id="partners" class="in_main_block">
+            <div class="main_head">ПАРТНЁРЫ</div>
+
+            <div id="partners_cards_container">
+                <img src="./img/partners/tsu.png" id="tsu_logo" alt="Томский государственный университет">
+                <img src="./img/partners/education_departament.png" id="departament"
+                    alt="Департамент общего образования Томской области">
+                <img src="./img/partners/initiative_school.svg" id="design_logo" alt="Сибирский центр дизайна">
+                <img src="./img/partners/gazprom.png" id="gazprom_logo" alt="Газпром">
+
+                <div id="regions_cards">
+                    <img src="./img/partners/regions/Асиновский.png" alt="Администрация Асиновского района">
+                    <img src="./img/partners/regions/Бачкарский.png" alt="Администрация Бачкарского района">
+                    <img src="./img/partners/regions/Зырянский.png" alt="Админстрация Зырянского района">
+                    <img src="./img/partners/regions/Первомайский.png" alt="Администрация Первомайского района">
+                    <img src="./img/partners/regions/Тегульдетский.png" alt="Администрация Тегульдетского района">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer_content_container">
+            <div class="contacts_container">
+                <div id="contacts_head">КОНТАКТЫ</div>
+
+                <div id="contacts">
+                    <div id="person_contact">
+                        <img src="./img/phone_icon.svg" class="contact_img">
+
+                        <div class="contact_text">
+                            <div class="contact_group">
+                                <div class="contact_name">Калюжная Юлия Юрьевна</div>
+                                <div class="contact_position">руководитель проекта</div>
+                                <a href="tel:83822512861">8(3822)51-28-61</a>
+                            </div>
+
+                            <br>
+
+                            <div class="contact_group">
+                                <div class="contact_name">Пикалова Лилия Рахимовна</div>
+                                <div class="contact_position">программный директор</div>
+                                <a href="tel:89138150200">8-913-815-0200</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="email">
+                        <img src="./img/footer/email.svg" class="contact_img">
+
+                        <div class="contact_text">
+                            <a href="mailto:rgotomsk70@mail.ru">rgotomsk70@mail.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact_links">
+                <a href="https://rgotomsk.com/">
+                    <img src="./img/footer/rgo_logo.svg" alt="Томское отделение РГО">
+                </a>
+
+                <br>
+
+                <div id="social_netwrks_container">
+                    <a href="https://vk.com/rgo_v_tomske">
+                        <img src="./img/footer/social_networks/vk_icon.svg" alt="ВК">
+                    </a>
+
+                    <a href="https://t.me/rgotomsk ">
+                        <img src="./img/footer/social_networks/telegram_icon.svg" alt="Telegram">
+                    </a>
+                </div>
+            </div>
+
+            <img src="./img/footer/fond_logo_group_footer.svg" alt="При поддержке фонда культурных иницатив">
+
+            <img src="./img/footer/gazprom_footer_logo.png" alt="При поддержке ПАО «Газпром»" id="gazprom_footer_logo">
+
+            <div id="company_info_container">
+                <div id="company_info">
+                    <p>ТОО "Русское географическое общество"</p>
+                    <p>Адрес: 634055, Томская обл., г. Томск, пр. Ленина, д.75</p>
+                    <p>ИНН/КПП: 7017997202/701701001</p>
+                    <p>ОГРН: 1147000000311</p>
+                    <p>Р/с: 40703810464000000300</p>
+                    <p>Филиал «Газпромбанк» (Акционерное общество) в г.Томске</p>
+                    <p>К/с 30101810800000000758</p>
+                    <p>БИК 046902758</p>
+                    <p>Исполнительный директор: Ю.Ю. Калюжная</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="all_rights_reserved">Томское областное отделение Русского географического общества © 1948 - 2022</div>
+    </footer>
+
+    <script src="./libs/bootstrap_v5_2_0/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/scroll_to.js"></script>
+    <script src="./scripts/slider.js"></script>
+    <script>
+        if (navigator.userAgent.indexOf("Trident") > -1) {
+            document.body.innerHTML = "Сайт может некорректно отображаться в вашем браузере. Пожалуйста, используйте другие браузеры. Например, Chrome или Firefox.";
+        }
+    </script>
+</body>
+
+</html>
